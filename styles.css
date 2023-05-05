@@ -1,0 +1,488 @@
+/* Start of CSS affecting direct tags */
+
+body {
+  background-color: #eaeaea;
+  font-family: Arial;
+}
+h1 {
+  font-family: Iceberg;
+  margin: 0;
+}
+h2 {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 14px;
+}
+ul {
+  font-size: 14px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+ul a {
+  text-decoration: none;
+  color: black;
+}
+sub {
+  float: right;
+  color: #C5110B;
+}
+img {
+  width: 100%;
+}
+footer {
+  background-color: red;
+}
+
+/* End of CSS affecting direct tags */
+
+/* Start of Logo */
+
+.logo {
+  width: 1100px;
+  margin: auto;
+}
+.robotJuice {
+  display: flex;
+  justify-content: flex-start;
+  font-family: Damion;
+  font-size: 60px;
+  height: 60px;
+}
+.robot {
+  color: #C5110B;
+  padding-right: 15px;
+  margin: 0;
+}
+.juice {
+  color: #000000;
+  margin: 0;
+}
+.tagLine {
+  font-family: Ariel;
+  font-size: 11px;
+  margin: 5px;
+  padding-left: 150px;
+  padding-bottom: 10px;
+}
+
+/* End of Logo */
+
+/* Start of Nav Bar */
+
+.nav {
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0;
+  width: 1100px;
+  border-bottom: solid #575859 1px;
+}
+.navItem {
+  display: inline-flex;
+  margin: 25px 0;
+  width: 100%;
+  justify-content: center;
+  color: #575859;
+  border-right: 1px solid #575859;
+  padding: 0.5rem 0.5rem;
+}
+.navActive {
+  display: inline-flex;
+  background-color: #C5110B;
+  width: 16.67%;
+}
+.navActiveItem {
+  color: white;
+  border: none;
+}
+.navInactive {
+  border-top: 1px solid #575859;
+  width: 16.67%;
+}
+
+/* End of Nav Bar */
+
+/* Start of Review Section */
+
+.reviewSection {
+  background-color: white;
+  padding: 25px 0;
+  border-top: 1px solid #9c847e;
+}
+.magazine {
+  width: 125px;
+}
+.latestReviews {
+  width: 240px;
+  padding-right: 300px;
+}
+.links {
+  width: 200px;
+}
+.linkItem {
+  margin-top: 10px;
+  color: #C5110B;
+}
+
+/* End of Review Section */
+
+/* Start of Footer */
+
+.footer {
+  background-color: #C5110B;
+  padding-bottom: 75px;
+}
+.footer1 {
+  margin-right: 2.5%;
+}
+.footer2 {
+  margin-left: 2.5%;
+}
+.footerLinks {
+  display: flex;
+  justify-content: flex-end;
+}
+.footerLi {
+  margin-top: 5px;
+  padding: 0 10px;
+  border-left: 1px solid black;
+}
+#footerCopy {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+/* End of Footer */
+
+/* Start of mobile styles for Direct Tags and Footer */
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+  ul {
+    font-size: 12px;
+  }
+  .footerLi {
+    margin-top: 5px;
+    padding: 0 5px;
+  }
+}
+
+/* End of mobile styles for Direct Tags and Footer */
+
+/* Start of CSS affecting classes/id's for Index.html */
+
+.robotImageAndTag {
+  text-align: center;
+  width: auto;
+  border-bottom: 1.75px solid #9c847e;
+  border-bottom-style: ridge;
+}
+.robotImage {
+  border-bottom: 6px solid #575859;
+}
+.roboTag {
+  margin: 1em 100px;
+}
+.productBlock {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  border-bottom: 1.75px solid #9c847e;
+  border-bottom-style: ridge;
+}
+.block {
+  width: 25%;
+  padding: 30px 20px 10px 0;
+}
+.blockImg {
+  box-shadow: 1px 5px 3px #575859;
+}
+.blockH1 {
+  margin-top: 10px;
+}
+.latestNews {
+  margin-top: 50px;
+}
+.newsItem {
+  margin: 0 100px 50px 0;
+}
+.pollAndCompetition {
+  background-color: white;
+  margin: 30px 0 30px 0;
+  padding: 0 10px 0 10px;
+}
+.pollRadio {
+  display: flex;
+  flex-direction: column;
+}
+.pollButton {
+  margin: 0 0 20px 30px;
+}
+.pollTag {
+  margin-bottom: 15px;
+}
+.pollLabel {
+  padding-left: 30px;
+}
+
+#pollInfo {
+  color: #C5110B;
+}
+#poll {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Start of mobile styles for Index.html */
+
+@media (max-width: 640px) {
+  .roboTag {
+    margin: 1em 10px;
+  }
+  .productBlock {
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .block {
+    width: 40%;
+    padding: 10px 6.5px 3px 0;
+  }
+  .newsItem {
+    margin: 0 10px 25px 10px;
+  }
+  .magazine {
+    width: 25%;
+    height: 25%;
+    margin: 10px;
+  }
+  .latestReviews {
+    width: 100%;
+    margin: 5px;
+  }
+  .links {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+/* End of mobile styles for Index.html */
+
+/* End of CSS affecting classes/id's for Index.html */
+
+/* Start of CSS affecting classes/id's for Product.html */
+
+.productPictures {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 30px 0;
+}
+.productSidePictures {
+  display: flex;
+  flex-direction: column;
+}
+.prodPicture {
+  margin: 5px;
+  border: solid #C5110B 1px;
+}
+.mainPicture {
+  width: 100%;
+  margin-right: 100px;
+  border: solid white 5px;
+}
+.productMainOrdering {
+  margin: 20px;
+}
+.orderForms {
+  margin-top: 20px;
+}
+.formBikeOil {
+  width: 49%;
+  padding: 5px 0;
+  background-image: linear-gradient(to top, #dedede, #ffffffff);
+}
+.searchAndShare {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.sharePic {
+  width: 11%;
+  margin: 1px;
+}
+.mainSimilarProducts {
+  border-top: 1.75px solid #9c847e;
+  border-bottom: 1.75px solid #9c847e;
+  border-bottom-style: ridge;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+.products {
+  display: flex;
+  justify-content: space-around;
+}
+.similarProducts {
+  text-align: center;
+  width: 10%;
+  padding: 30px;
+  margin: 20px 0px;
+  background-color: #53695b;
+  border-radius: 3px;
+}
+.productTitle {
+  margin-left: 20px;
+  padding-right: 68.75%;
+}
+.singleReview {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #575859;
+}
+.profile {
+  display: inline-flex;
+  margin: 20px 0 20px 100px;
+  width: 20%;
+}
+.profilePic {
+ margin: 10px;
+ border-radius: 20px;
+}
+.nicknameAndRating {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.singleRating {
+  margin: 0;
+  display: inline;
+}
+.actualReview {
+  width: 50%;
+}
+
+#reviews {
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#formButton {
+  margin-top: 10px;
+  width: 99%;
+  padding: 10px 0;
+  background-color: #C5110B;
+  color: white;
+  border: none;
+}
+#reviewsButton {
+  margin: 40px 42% 20px;
+  padding: 10px 20px;
+  background-color: #C5110B;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Start of mobile styles for Product.html */
+
+@media (max-width: 640px) {
+  .prodPicture {
+    width: 150%;
+    margin: 10px;
+  }
+  .mainPicture {
+    padding-right: 50px;
+  }
+  .productMainOrdering {
+    text-align: center;
+  }
+  .formBikeOil {
+    width: 20%;
+  }
+  .searchAndShare {
+    align-items: center;
+  }
+  #formButton {
+    display: block;
+    margin-left: 30%;
+    width: 40%;
+  }
+}
+
+/* End of mobile styles for Product.html */
+
+/* End of CSS affecting classes/id's for Product.html */
+
+/* Start of CSS affecting specific aspects */
+
+.bold {
+  font-weight: bold;
+}
+.grey {
+  color: #575859;
+}
+.rust {
+  color: #9c847e;
+}
+.red {
+  color: #C5110B;
+}
+.marginUp {
+  margin-top: 10px;
+}
+.noMargin {
+  margin: 0;
+}
+.floatLeft {
+  float: left;
+}
+.hide {
+  display: none;
+}
+/* sizeAdjuster is a special class because its used for both the footer and the reviewSection to make the background color
+   reach the ends of the page and deal with the sizing within itself */
+.sizeAdjuster {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: auto;
+}
+
+/* End of CSS affecting specific aspects */
+
+/* Start of Exceptions */
+/* The Exceptions are used for scenarios were a heavily used class has one or two cases where it needs to differ,
+   thus the exceptions stop a certain aspect from happening to that element */
+.LiException {
+  border: none;
+}
+.blockException {
+  padding-right: 0;
+}
+.textException {
+  font-size: 1em;
+}
+.listException {
+  display: list-item;
+}
+.underlineExceptions {
+  text-decoration: underline;
+}
+.h2Exception {
+  font-size: 1.5em;
+}
+
+/* End of Exceptions for Index.html */
