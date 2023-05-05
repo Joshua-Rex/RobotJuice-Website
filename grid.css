@@ -1,0 +1,145 @@
+
+/* Start of grid area delcarations */
+
+/* Start of universial declarations */
+
+.logo {
+  grid-area: logo;
+}
+nav {
+  grid-area: nav;
+}
+.reviewSection {
+  grid-area: reviewSection;
+}
+.footer {
+  grid-area: footer;
+}
+
+/* End of universial declarations */
+
+/* Start of main content declarations */
+
+.mainContentIndex {
+  grid-area: mainContent;
+}
+.mainContentProduct {
+  grid-area: mainContent;
+}
+
+/* End of main content declarations */
+
+/* Start of nested grid declarations (Index) */
+
+.robotImageAndTag {
+  grid-area: robotImage;
+}
+.productBlock {
+  grid-area: productBlock;
+}
+.latestNews {
+  grid-area: latestNews;
+}
+.pollAndCompetition {
+  grid-area: pollnComp;
+}
+
+/* End of nested grid declarations (Index) */
+
+/* Start of nested grid declarations (Product) */
+
+.productPictures {
+  grid-area: productPictures;
+}
+.productMainOrdering {
+  grid-area: productOrdering;
+}
+.mainSimilarProducts {
+  grid-area: mainSimilarProducts;
+}
+.productReviews {
+  grid-area: productReviews;
+}
+
+/* End of nested grid declarations (Product) */
+
+/* End of grid area declarations */
+
+/* Start of grid declarations */
+
+.container {
+ display: grid;
+ grid-template-columns: repeat(8, auto);
+ grid-template-rows: repeat(5, auto);
+ width: 100%;
+ margin: 0;
+ grid-template-areas:
+   "logo logo logo logo logo logo logo logo"
+   "nav nav nav nav nav nav nav nav"
+   "mainContent mainContent mainContent mainContent mainContent mainContent mainContent mainContent"
+   "reviewSection reviewSection reviewSection reviewSection reviewSection reviewSection reviewSection reviewSection"
+   "footer footer footer footer footer footer footer footer";
+}
+.mainContentIndex {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, auto);
+  width: 1100px;
+  margin: auto;
+  grid-template-areas:
+    "robotImage robotImage robotImage robotImage"
+    "productBlock productBlock productBlock productBlock"
+    "latestNews latestNews latestNews pollnComp";
+}
+.mainContentProduct {
+  display: grid;
+  grid-template-columns: repeat(6, 16.67%);
+  grid-template-rows: repeat(3, auto);
+  width: 1100px;
+  margin: auto;
+  grid-template-areas:
+    "productPictures productPictures productPictures productPictures productOrdering productOrdering"
+    "mainSimilarProducts mainSimilarProducts mainSimilarProducts mainSimilarProducts mainSimilarProducts mainSimilarProducts"
+    "productReviews productReviews productReviews productReviews productReviews productReviews";
+}
+
+/* Start of mobile grid declarations */
+
+@media (max-width: 640px) {
+  .container {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "logo logo logo logo"
+      "nav nav nav nav"
+      "mainContent mainContent mainContent mainContent"
+      "reviewSection reviewSection reviewSection reviewSection"
+      "footer footer footer footer";
+  }
+  .mainContentIndex {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "robotImage robotImage"
+      "productBlock productBlock"
+      "latestNews latestNews"
+      "pollnComp pollnComp";
+  }
+  .mainContentProduct {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "productPictures productPictures"
+      "productOrdering productOrdering"
+      "mainSimilarProducts mainSimilarProducts"
+      "productReviews productReviews";
+  }
+}
+
+/* End of mobile grid declarations */
+
+/* End of grid declarations */
