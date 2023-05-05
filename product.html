@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Robot Juice</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Damion">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Iceberg&display=swap">
+    <script src="jquery.min.js"></script>
+    <script src="reviews.js"></script>
+  </head>
+  <!-- Start of container grid, contains: logo, nav, mainContent grid, reviewSection, footer -->
+  <body class="container">
+    <!-- Start of logo, contains: robotJuice(robot and juice), tagline -->
+    <header class="logo">
+      <div class="robotJuice"><p class="robot textException">Robot</p><p class="juice textException">Juice</p></div>
+      <p class="tagLine">fictitious cycle lubricants</p>
+      <!-- The logo is made up of 3 different p tags, this is so the colors and sizes of each tag can change without affecting the other tags -->
+    </header>
+    <!-- End of logo -->
+    <!-- Start of nav, contains: navActive, navInactive, navItem, navActiveItem -->
+    <nav>
+      <ul class="nav rust">
+        <li class="navInactive"><a class="navItem" href="index.html">Home</a></li>
+        <li class="navActive"><a class="navItem navActiveItem" href="product.html">Products</a></li>
+        <li class="navInactive"><a class="navItem" href="">Protect</a></li>
+        <li class="navInactive"><a class="navItem" href="">Stockists</a></li>
+        <li class="navInactive"><a class="navItem" href="">Events</a></li>
+        <li class="navInactive"><a class="navItem LiException" href="">Reviews</a></li>
+        <!-- The nav bar is just a list made to go horizontally with a right border to create a small line inbetween the li tags-->
+      </ul>
+    </nav>
+    <!-- End of nav -->
+    <!-- Start of mainContent(Product) grid, contains: productPictures, productOrdering, mainSimilarProducts, productReviews -->
+    <div class="mainContentProduct">
+      <div class="productPictures">
+        <div class="productSidePictures">
+          <img class="prodPicture" src="../robot-juice-images/prod-thumb1.jpg" alt="prod1">
+          <img class="prodPicture" src="../robot-juice-images/prod-thumb2.jpg" alt="prod2">
+          <img class="prodPicture" src="../robot-juice-images/prod-thumb3.jpg" alt="prod3">
+        </div>
+        <div class="productMainPicture">
+          <img class="mainPicture" src="../robot-juice-images/robotjuicebikeoil.jpg" alt="mainPic">
+        </div>
+      </div>
+      <div class="productMainOrdering">
+        <h1>Bike Oil</h1>
+        <h2 class="red">£99.99</h2>
+        <!-- The below forms don't have JS connected to them, so they don't respond when the button is pressed -->
+        <form class="orderForms">
+          <select id="formSize" name="size" class="bold formBikeOil">
+            <option value="default">Size</option>
+            <option value="big">Big</option>
+            <option value="notSoBig">Medium</option>
+            <option value="oppositeBig">Small</option>
+          </select>
+          <select id="formQty" name="quantity" class="bold formBikeOil">
+            <option value="default">Qty</option>
+            <option value="aLot">A truck full</option>
+            <option value="aFairAmount">A barrel full</option>
+            <option value="aSmallAmount">A cup full</option>
+          </select>
+          <input id="formButton" class="bold" type="button" value="BUY NOW">
+        </form>
+        <div class="searchAndShare grey">
+          <h2>FIND NEAREST STOCKIST</h2>
+          <h2>SHARE<img class="sharePic" src="../robot-juice-images/facebook.jpg" alt="facebook"><img class="sharePic" src="../robot-juice-images/twitter.jpg" alt="twitter"> <img class="sharePic" src="../robot-juice-images/email.jpg" alt="email"></h2>
+        </div>
+        <p>Robot Juice bike oil for bicycles stops rust and other corrosion from starting. Applied to already corroding metals it breaks down the corrosion and starts preventing it from building up and protects from the point of contact.</p>
+      </div>
+      <div class="mainSimilarProducts">
+        <h1>Similar Products</h1>
+        <div class="products">
+          <div class="similarProducts">
+            <h1>Sim prod ONE</h1>
+          </div>
+          <div class="similarProducts">
+            <h1>Sim prod TWO</h1>
+          </div>
+          <div class="similarProducts">
+            <h1>Sim prod THREE</h1>
+          </div>
+          <div class="similarProducts">
+            <h1>Sim prod FOUR</h1>
+          </div>
+          <div class="similarProducts">
+            <h1>Sim prod FIVE</h1>
+          </div>
+          <div class="similarProducts">
+            <h1>Sim prod SIX</h1>
+          </div>
+        </div>
+      </div>
+      <div class="productReviews">
+        <h1 class="floatLeft">Product Reviews</h1><h1 class="productTitle red floatLeft">*****</h1>
+        <hr>
+        <div id="reviews">
+          <!-- Area where reviews are appended from the API -->
+        </div>
+        <input id="reviewsButton" class="bold" type="button" value="READ ALL REVIEWS">
+      </div>
+    </div>
+    <!-- End of mainContent(Product) grid -->
+    <!-- Start of reviewSection, contains: Magazine, latestNews and links -->
+    <div class="reviewSection">
+      <div class="sizeAdjuster">
+        <!-- The sizeAdjuster is what makes the reviewSection and footer have their background color cover the whole page -->
+        <img class="magazine" src="../robot-juice-images/cyclemagazine.jpg" alt="magazine">
+        <div class="latestReviews red">
+          <h2 class="h2Exception">Latest Reviews</h2>
+          <p>Cycling magazine has given Robot Juice a 5 star rating in its latest reviews of dry lubricants. Robot Juice Dry lube was rated the highest out of over 40 top brand of dry lubes.</p>
+        </div>
+        <div class="links red">
+          <h2 class="h2Exception">Links</h2>
+          <ul class="listException">
+            <li class="linkItem"><a class="red underlineExceptions" href="#">Edge hill University</a></li>
+            <li class="linkItem"><a class="red underlineExceptions" href="#">Dave Walsh</a></li>
+            <li class="linkItem"><a class="red underlineExceptions" href="https://twitter.com/walsh_d">https://twitter.comwalsh_d</a></li>
+            <li class="linkItem"><a class="red underlineExceptions" href="#">CIS2120 - Designing for web standards module</a></li>
+            <!-- These links are different from the other two because this is a list going vertically, which is why it has the class listException, it also possesses the underlineExceptions because it does have an underline unlike the other links -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End of reviewSection -->
+    <!-- Start of footer, contains: footer1, footer2(footerLinks) -->
+    <div class="footer">
+      <div class="sizeAdjuster">
+        <!-- The sizeAdjuster is what makes the reviewSection and footer have their background color cover the whole page -->
+        <div class="footer1">
+          <p>Robot Juice Fictitous Products Not Ltd. Unit 9%, Privet Drive, Little Whinegeing, Surrey DN18 5RP</p>
+          <p>Telephone: +44 (0)1695 657648. Email: walshd@edgehill.ac.uk</p>
+        </div>
+        <div class="footer2">
+          <ul class="footerLinks">
+            <li><a class="footerLi LiException" href="#">Contact Us</a></li>
+            <li><a class="footerLi" href="#">Privacy</a></li>
+            <li><a class="footerLi" href="#">Terms & Conditions</a></li>
+            <li><a class="footerLi" href="#">Accessibility</a></li>
+            <!-- Like the nav bar, this is just a list made to go horizontally with a border on the side -->
+          </ul>
+          <p id="footerCopy">Copyright © 2012 Dave Walsh. Design by Dave Walsh</p>
+        </div>
+      </div>
+    </div>
+    <!-- End of footer -->
+  </body>
+  <!-- End of container grid -->
+</html>
