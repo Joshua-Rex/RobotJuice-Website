@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="grid.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Damion">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Iceberg&display=swap">
+    <script src="jquery.min.js"></script>
+    <script src="poll.js"></script>
+    <title>Robot Juice</title>
+  </head>
+  <!-- Start of container grid, contains: logo, nav, mainContent grid, reviewSection, footer -->
+  <body class="container">
+    <!-- Start of logo, contains: robotJuice(robot and juice), tagline -->
+    <header class="logo">
+      <div class="robotJuice"><p class="robot textException">Robot</p><p class="juice textException">Juice</p></div>
+      <p class="tagLine">fictitious cycle lubricants</p>
+      <!-- The logo is made up of 3 different p tags, this is so the colors and sizes of each tag can change without affecting the other tags -->
+    </header>
+    <!-- End of logo -->
+    <!-- Start of nav, contains: navActive, navInactive, navItem, navActiveItem -->
+    <nav>
+      <ul class="nav rust">
+        <li class="navActive"><a class="navItem navActiveItem" href="index.html">Home</a></li>
+        <li class="navInactive"><a class="navItem" href="product.html">Products</a></li>
+        <li class="navInactive"><a class="navItem" href="">Protect</a></li>
+        <li class="navInactive"><a class="navItem" href="">Stockists</a></li>
+        <li class="navInactive"><a class="navItem" href="">Events</a></li>
+        <li class="navInactive"><a class="navItem LiException" href="">Reviews</a></li>
+        <!-- The nav bar is just a list made to go horizontally with a right border to create a small line inbetween the li tags-->
+      </ul>
+    </nav>
+    <!-- End of nav -->
+    <!-- Start of mainContent grid(Index), contains: robotImage, productBlocks, latestNews, pollAndCompetition -->
+    <div class="mainContentIndex">
+      <div class="robotImageAndTag">
+        <img class="robotImage" src="../robot-juice-images/robotbanner.jpg" alt="Robot Banner">
+        <h1 class="roboTag grey">Robot juice is the ultimate fictitious bicycle and motercycle lubracant oils.</h1>
+      </div>
+      <div class="productBlock">
+        <div class="block">
+          <img class="blockImg" src="../robot-juice-images/bikechain-bikeoil.jpg" alt="bike chain">
+          <h1 class="blockH1">Bike Oil</h1>
+          <p>Stops and protects against rust, reduces friction on moving parts and is essential on any cycle.</p>
+        </div>
+        <div class="block">
+          <img class="blockImg" src="../robot-juice-images/cycleside-drylubrication.jpg" alt="dry lube">
+          <h1 class="blockH1">Dry Lubricant</h1>
+          <p>Perfect chain lubricant for dry road riding. Resists water penetration and wash-off easily.</p>
+        </div>
+        <div class="block">
+          <img class="blockImg" src="../robot-juice-images/frontcycle-wetlubrication.jpg" alt="wet lube">
+          <h1 class="blockH1">Wet Lubricant</h1>
+          <p>A thick, heavy duty lube designed to stick to the chain in wet conditions. Ideal for extreme weather and long distance riding.</p>
+        </div>
+        <div class="block blockException">
+          <img class="blockImg" src="../robot-juice-images/productreviews.jpg" alt="product reviews">
+          <h1 class="blockH1">Product Reviews</h1>
+          <p>Read what the press and our customers say about our excellent products.</p>
+        </div>
+      </div>
+      <div class="latestNews">
+        <h1>Latest News</h1>
+        <div class="newsItem">
+          <p class="bold rust">News item one!</p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.</p>
+          <sub>September, 2012</sub>
+        </div>
+        <div class="newsItem">
+          <p class="bold rust">News item one!</p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susipit.</p>
+          <sub>September, 2012</sub>
+        </div>
+        <div class="newsItem">
+          <p class="bold rust">News item one!</p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susipit.</p>
+          <sub>September, 2012</sub>
+        </div>
+      </div>
+      <div class="pollAndCompetition">
+        <h1>Reader Poll</h1>
+        <p id="pollInfo" class="red">Are Robot Juice the best and musable and accessible fake oils around?</p>
+        <!-- This is the form thats connected to the poll.js file -->
+        <form action="poll.js" id="poll">
+          <div class="pollRadio">
+            <input type="radio" id="pollYes" class="pollButton" name="poll" value="yes">
+            <input type="radio" id="pollNo" class="pollButton" name="poll" value="no">
+          </div>
+          <div class="pollRadio pollLabel">
+            <label for="pollYes" class="pollTag">Yes</label>
+            <label for="pollNo" class="pollTag">No</label>
+          </div>
+        </form>
+        <div>
+          <h1>Competition</h1>
+          <p class="marginUp">Win absolutely nothing by entering this extremely expensive competition. Robot Juice will not send you a full range of our cycling and motorcycle oils and lubricants as we do not exist. But just for fun.</p>
+
+          <p class="marginUp">Which Film is our address made up from?</p>
+
+          <p class="noMargin">a) Armageddon</p>
+          <p class="noMargin">b) Harry Potter</p>
+          <p class="noMargin">c) The simpsons (Moive)</p>
+
+          <p class="marginUp">Answers on a postcard please.</p>
+          <!-- These are indented to make it easier to tell represent what it looks like on the website -->
+        </div>
+      </div>
+    </div>
+    <!-- End of mainContent(Index) grid -->
+    <!-- Start of reviewSection, contains: Magazine, latestNews and links -->
+    <div class="reviewSection">
+      <div class="sizeAdjuster">
+        <!-- The sizeAdjuster is what makes the reviewSection and footer have their background color cover the whole page -->
+        <img class="magazine" src="../robot-juice-images/cyclemagazine.jpg" alt="magazine">
+        <div class="latestReviews red">
+          <h2 class="h2Exception">Latest Reviews</h2>
+          <p>Cycling magazine has given Robot Juice a 5 star rating in its latest reviews of dry lubricants. Robot Juice Dry lube was rated the highest out of over 40 top brand of dry lubes.</p>
+        </div>
+        <div class="links red">
+          <h2 class="h2Exception">Links</h2>
+          <ul class="listException">
+            <li class="linkItem"><a class="red underlineExceptions" href="#">Edge hill University</a></li>
+            <li class="linkItem"><a class="red underlineExceptions" href="#">Dave Walsh</a></li>
+            <li class="linkItem"><a class="red underlineExceptions" href="https://twitter.com/walsh_d">https://twitter.comwalsh_d</a></li>
+            <li class="linkItem"><a class="red underlineExceptions" href="#">CIS2120 - Designing for web standards module</a></li>
+            <!-- These links are different from the other two because this is a list going vertically, which is why it has the class listException, it also possesses the underlineExceptions because it does have an underline unlike the other links -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End of reviewSection -->
+    <!-- Start of footer, contains: footer1, footer2(footerLinks) -->
+    <div class="footer">
+      <div class="sizeAdjuster">
+        <!-- The sizeAdjuster is what makes the reviewSection and footer have their background color cover the whole page -->
+        <div class="footer1">
+          <p>Robot Juice Fictitous Products Not Ltd. Unit 9%, Privet Drive, Little Whinegeing, Surrey DN18 5RP</p>
+          <p>Telephone: +44 (0)1695 657648. Email: walshd@edgehill.ac.uk</p>
+        </div>
+        <div class="footer2">
+          <ul class="footerLinks">
+            <li><a class="footerLi LiException" href="#">Contact Us</a></li>
+            <li><a class="footerLi" href="#">Privacy</a></li>
+            <li><a class="footerLi" href="#">Terms & Conditions</a></li>
+            <li><a class="footerLi" href="#">Accessibility</a></li>
+            <!-- Like the nav bar, this is just a list made to go horizontally with a border on the side -->
+          </ul>
+          <p id="footerCopy">Copyright © 2012 Dave Walsh. Design by Dave Walsh</p>
+        </div>
+      </div>
+    </div>
+    <!-- End of footer -->
+  </body>
+  <!-- End of container grid -->
+</html>
